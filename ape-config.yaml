@@ -1,0 +1,16 @@
+name: iaslo
+contracts_folder: contracts
+
+dependencies:
+  - name: Uniswap
+    github: Uniswap/v4-core
+    ref: main
+  - name: OpenZeppelin
+    github: OpenZeppelin/openzeppelin-contracts
+    ref: master
+
+ganache:
+  server:
+    port: 8545
+
+default_ecosystem: ethereum
