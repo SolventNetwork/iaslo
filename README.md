@@ -16,3 +16,7 @@ and run the test script with
 ```
 ape run scripts/deploy_test.py
 ```
+
+## Contribution Guidelines
+
+See our [contribution guidelines](/CONTRIBUTING.md)!
