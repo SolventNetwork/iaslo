@@ -17,11 +17,12 @@ git clone https://github.com/SolventNetwork/iaslo
 cd iaslo
 ```
 
-Then create and activate your Python virtual environment:
+Then create and activate your Python virtual environment and install the necessary packages:
 
 ```
 python3 -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 Next, install the Node.js packages. If you don't have Node.js and npm installed, you can download and install them from [the official Node.js website](https://nodejs.org/).
@@ -41,11 +42,12 @@ git clone https://github.com/SolventNetwork/iaslo
 cd iaslo
 ```
 
-Then create and activate your Python virtual environment:
+Then create and activate your Python virtual environment and install the necessary packages:
 
 ```
 python -m venv .venv
 .venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
 Next, install the Node.js packages. If you don't have Node.js and npm installed, you can download and install them from [the official Node.js website](https://nodejs.org/).
