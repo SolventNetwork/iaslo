@@ -18,10 +18,8 @@ account = accounts.load("banana")
 
 
 def deploy_erc20_token(name, symbol):
-    # Access the ERC20 contract from the OpenZeppelin dependency
-    ERC20 = project.dependencies["OpenZeppelin"]["master"].ERC20
-    print(ERC20.source_path)
-    deployed_token = account.deploy(ERC20, name, symbol)
+    TestToken = project.TestToken
+    deployed_token = account.deploy(TestToken, name, symbol)
     print(f"Deployed Token at address: {deployed_token.address}")
     return deployed_token
 
@@ -33,16 +31,17 @@ def deploy_uniswap_v4_contracts():
     return factory
 
 
-def main():
+def test_stuff():
     print(f"Deploying contracts with account: {account.address}")
     print(f"Account balance: {account.balance}")
     print(f"Connected to {networks.network.name}")
+    print(dir(project.dependencies["OpenZeppelin"]["master"]))
 
     token1 = deploy_erc20_token("token1", "TKN1")
     token2 = deploy_erc20_token("token2", "TKN2")
 
-    uniswap_factory = deploy_uniswap_v4_contracts()
+    # uniswap_factory = deploy_uniswap_v4_contracts()
 
     print(f"Deployed Token1 at address: {token1.address}")
     print(f"Deployed Token2 at address: {token2.address}")
-    print(f"Deployed Uniswap V4 Factory at address: {uniswap_factory.address}")
+    # print(f"Deployed Uniswap V4 Factory at address: {uniswap_factory.address}")

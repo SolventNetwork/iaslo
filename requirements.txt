@@ -4,6 +4,7 @@ ape-alchemy==0.6.4
 ape-ens==0.6.1
 ape-etherscan==0.6.10
 ape-foundry==0.6.15
+ape-ganache==0.6.8
 ape-hardhat==0.6.12
 ape-infura==0.6.3
 ape-solidity==0.6.8
@@ -128,7 +129,7 @@ toolz==0.12.0
 tqdm==4.66.1
 traitlets==5.9.0
 trie==2.1.1
-typing-extensions==4.7.1
+typing_extensions==4.7.1
 urllib3==2.0.4
 varint==1.0.2
 vvm==0.1.0

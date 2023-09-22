@@ -7,7 +7,11 @@ dependencies:
     ref: main
   - name: OpenZeppelin
     github: OpenZeppelin/openzeppelin-contracts
-    ref: master
+    version: 4.4.2
+
+solidity:
+  import_remapping:
+    - "@openzeppelin=OpenZeppelin/4.4.2"
 
 ganache:
   server:
