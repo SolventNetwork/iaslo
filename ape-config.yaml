@@ -13,8 +13,9 @@ solidity:
   import_remapping:
     - "@openzeppelin=OpenZeppelin/4.4.2"
 
-ganache:
-  server:
-    port: 8545
-
 default_ecosystem: ethereum
+
+test:
+  mnemonic: ring ring ring ring ring ring ring banana phone ring ring ring
+  number_of_accounts: 10
+
