@@ -14,7 +14,7 @@ ape accounts import --use-mnemonic banana
 And input the seed phrase above.
 """
 
-account = accounts.load("banana")
+account = accounts.test_accounts[0]
 
 
 def deploy_erc20_token(name, symbol):
@@ -35,7 +35,6 @@ def test_stuff():
     print(f"Deploying contracts with account: {account.address}")
     print(f"Account balance: {account.balance}")
     print(f"Connected to {networks.network.name}")
-    print(dir(project.dependencies["OpenZeppelin"]["master"]))
 
     token1 = deploy_erc20_token("token1", "TKN1")
     token2 = deploy_erc20_token("token2", "TKN2")
